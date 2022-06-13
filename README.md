@@ -23,7 +23,33 @@ As this is an introductory tutorial, no direct experience with PyMC or Bayesian 
     - What to do when things go wrong
 4. Model checking (15 min)
     - Summarizing your model with plots and tables
-    - Did our inference algorithm work as expected
+    - Did our inference algorithm work as expected?
     - Is our model generating reasonable and believable results?
 5. The Bayesian workflow (20 min)
     - A complete working example, from data import through to interpreting the results
+
+## Setup
+
+This tutorial assumes that you have [Anaconda](https://www.anaconda.com/distribution/#download-section) (Python 3.9 version) or [Miniforge](https://github.com/conda-forge/miniforge) setup and installed on your system.
+
+The next step is to clone or download the tutorial materials in this repository. If you are familiar with Git, run the clone command:
+
+    git clone https://github.com/fonnesbeck/probabilistic_python.git
+    
+otherwise you can [download a zip file](https://github.com/fonnesbeck/probabilistic_python/archive/master.zip) of its contents, and unzip it on your computer.
+
+In either case, you should now have a directory called `probabilistic_python` in your current working directory.
+
+    cd probabilistic_python
+
+The repository for this tutorial contains a file called `environment.yml` that includes a list of all the packages used for the tutorial. If you run:
+
+    conda env create
+    
+from the main tutorial directory, it will create the environment (called `prob_python`) for you and install all of the packages listed. This environment can be enabled using:
+
+    conda activate prob_python
+    
+Then, I recommend using JupyterLab to access the materials:
+
+    jupyter lab

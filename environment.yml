@@ -1,0 +1,22 @@
+name: prob_python
+
+channels:
+ - conda-forge
+ 
+dependencies:
+- python
+- arviz
+- ipython
+- jupyterlab
+- notebook
+- ipykernel
+- numpy
+- pandas
+- patsy
+- pip
+- python-graphviz
+- pymc
+- scipy
+- seaborn
+- pip:
+  - pybaseball
